@@ -1,0 +1,38 @@
+name: Deploy Power Platform Components
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy PowerApps
+      run: |
+        echo "Deploying PowerApps component..."
+        # Add commands or scripts to deploy PowerApps component
+        # Example: Use the Power Platform CLI to deploy
+        # pac solution import --path ./PowerApps/EmployeeLeaveApp.msapp --environment [environment-id]
+
+    - name: Deploy Power Automate Flow
+      run: |
+        echo "Deploying Power Automate flow..."
+        # Add commands or scripts to deploy Power Automate Flow
+        # Example: Use the Power Platform CLI to deploy
+        # pac flow import --path ./PowerAutomate/LeaveApprovalFlow.json --environment [environment-id]
+
+    - name: Deploy Power BI Report
+      run: |
+        echo "Deploying Power BI report..."
+        # Add commands or scripts to deploy Power BI report
+        # Example: Use Power BI REST API to deploy
+        # az login --service-principal -u ${{ secrets.AZURE_CLIENT_ID }} -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+        # az group create --name myResourceGroup --location eastus
+        # az powerbi report upload --name myReport --workspace-id [workspace-id] --file ./PowerBI/LeaveDataReport.pbix
