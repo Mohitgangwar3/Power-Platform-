@@ -1,0 +1,15 @@
+# LeaveTrack Pro
+
+## Overview
+LeaveTrack Pro is an Employee Leave Management System developed using Microsoft Power Platform tools and Python for data integration and analysis.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Cost
+This project is available for a cost of USD 5.
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Employee-Leave-Management-System.git
