@@ -1,0 +1,13 @@
+Employee-Leave-Management-System/
+├── README.md
+├── PowerApps/
+│   ├── EmployeeLeaveApp.msapp
+├── PowerAutomate/
+│   ├── LeaveApprovalFlow.json
+├── PowerBI/
+│   ├── LeaveDataReport.pbix
+├── Scripts/
+│   ├── get_leave_requests.py
+│   ├── update_leave_status.py
+│   └── analyze_leave_data.py
+└── requirements.txt
